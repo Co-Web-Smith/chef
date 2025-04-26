@@ -54,7 +54,7 @@ def log_chat(user_input, bot_response):
 @app.route('/')
 def home():
     greeting = get_time_based_greeting()
-    return render_template('index.html', greeting=greeting)
+    return render_tempate('index.html', greeting=greeting)
 
 @app.route('/chat', methods=['POST'])
 def chat():
